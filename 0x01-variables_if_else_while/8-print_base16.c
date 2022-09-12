@@ -6,22 +6,17 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	int y;
+	int x;
 
-	for (a = 0; a <= 8; ++a)
+	for (y = 0; y <= 8; ++y)
 	{
-		for (b = 1; b <= 9; ++b)
-		{
-			if (a == b || a > b)
-			{
-				continue;
-			}
-			putchar(a % 10 + '0');
-			putchar(b % 10 + '0');
-			putchar(',');
-			putchar(' ');
-			return (0);
-		}
+		putchar(y % 10 + '0');
 	}
+		for (x = 'a'; x <= 'f'; ++x)
+		{
+			putchar(x);
+		}
+		putchar('\n');
+		return (0);
 }
